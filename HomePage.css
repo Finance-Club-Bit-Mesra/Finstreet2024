@@ -1,0 +1,556 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container1{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: linear-gradient(45deg,black,grey);
+}
+.logoBar1{
+    width: 100vw;
+    height: 5rem;
+    background: transparent;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.logo1{
+    height: 70%;
+    margin: 5px;
+}
+.finstreet1{
+    font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 800;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 25px;
+    backdrop-filter: blur(15px);
+    backdrop-filter: contrast(1.2);
+    border-radius: 20px;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.finstreet1:hover{
+    cursor: pointer;
+}
+.finstreet1:hover .fin1{
+    color: white;
+}
+.finstreet1:hover .street1{
+    color: gold;
+}
+.fin1{
+    color: gold;
+}
+.street1{
+    color: white;
+}
+.fclogo1{
+    height: 4rem;
+}
+.navbar1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    width: 100vw;
+    height: 3rem;
+    position: absolute;
+    margin-top: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.nav1{
+    /* position: sticky; */
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 35px;
+    font-size: 20px;
+}
+.navBox1 a {
+    text-decoration: none;
+    color: white;
+}
+.navBox1{
+    width: 18%;
+    font-size: 1.3rem;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+    border-radius: 10px;
+    transition-duration: 1.2s;
+}
+.navBox1:hover{
+    cursor: pointer;
+    background-color: black;
+    transform: scale(1.2);
+    transition-duration: 1.2s;
+}
+.navBox1:hover a{
+    color: gold;
+    text-decoration: none;
+}
+.logo1:hover{
+    cursor: pointer;
+}
+.bgVideo1{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+.buttons1{
+    width: 100vw;
+    height: auto;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    margin-top: 270px;
+}
+.text1{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    width: 60%;
+}
+.content1{
+    text-align: center;
+}
+.buttons1 button{
+    height: 3.5rem;
+    width: 14rem;
+    margin: 10px;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.buttons1 button a {
+    text-decoration: none;
+    color: white;
+}
+.register1:hover{
+    transform: scale(1.1);
+    transition-duration: 1.2s;
+    background: transparent;
+    color: white;
+    border-color: gold;
+}
+.knowmore1:hover{
+    transition-duration: 1.2s;
+    transform: scale(1.1);
+    background-color: rgb(81, 1, 81);
+    color: gold;
+    border: 3px solid gold;
+}
+.innerBtn{
+    display: flex;
+}
+.register1{
+    background-color: #00620b;
+    color: gold;
+    border: 3px solid gold;
+    transition-duration: 1.2s;
+}
+.knowmore1{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transition-duration: 1.2s;
+}
+.icons1{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 4rem;
+    width: 30%;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+.icons1 a img{
+    height: 2rem;
+    margin: 4px;
+    width: fit-content;
+}
+.mainlogo{
+    height: 4rem;
+    margin: 10px;
+    filter: brightness(10);
+}
+.hidden{
+    display: none;
+}
+.hamToggle{
+    display: none;
+}
+.hamburger1{
+    display: none;
+}
+
+@media only screen and (min-aspect-ratio: 16/9) {
+    .bgVideo1{
+        width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (max-aspect-ratio: 16/9) {
+    .bgVideo1{
+        width: auto;
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 1150px) and (min-width: 801px){
+    .nav1{
+        width: 55%;
+    }
+    .finstreet1{
+        font-size: 2rem;
+        width: 15rem;
+    }
+}
+@media only screen and (max-width: 800px) and (min-width:481px) {
+    .nav1{
+
+        width: 88%;
+        margin-right: 0px;
+    }
+    .navbar1{
+        justify-content: center;
+    }
+    .finstreet1{
+        display: none;
+    }
+    .buttons1{
+        display: none;
+    }
+    .container1{
+        display: flex;
+        flex-direction: column;
+    }
+    .hidden{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        align-self: center;
+        margin-top: 220px;
+        border: 2px solid white;
+        height: 60%;
+        width: 60%;
+        border-radius: 15px;
+        backdrop-filter: blur(20px);
+    }
+    .finstreet12{
+        display: flex;
+        font-size: 2rem;
+    }
+    .fclogo12{
+        height: 2rem;
+    }
+    .buttons12{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .buttons12 button{
+        margin: 4px;
+        height: 4rem;
+        border-radius: 10px;
+        width: 80%;
+    }
+    .text1{
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        margin-top: 40px;
+        width: 90%;
+    }
+    .content1{
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+}
+@media only screen and (max-width: 480px) and (min-width:381px) {
+    .nav1{
+
+        width: 90%;
+        margin-right: 0px;
+    }
+    .navbar1{
+        justify-content: center;
+    }
+    .finstreet1{
+        display: none;
+    }
+    .buttons1{
+        display: none;
+    }
+    .container1{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar1{
+        display: none;
+    }
+    .hidden{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        align-self: center;
+        margin-top: 220px;
+        border: 2px solid white;
+        height: 60%;
+        width: 70%;
+        border-radius: 15px;
+        backdrop-filter: blur(20px);
+    }
+    .finstreet12{
+        display: flex;
+        font-size: 2rem;
+    }
+    .fclogo12{
+        height: 2rem;
+    }
+    .buttons12{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .buttons12 button{
+        margin: 4px;
+        height: 4rem;
+        border-radius: 10px;
+        width: 80%;
+    }
+    .text1{
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        margin-top: 40px;
+        width: 90%;
+    }
+    .content1{
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+    .hamburger1{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        backdrop-filter: blur(10px) contrast(5);
+        transition-duration: 2s;
+    }
+    .name1{
+        font-size: 1.4rem;
+        font-family: 'Diplomata', serif;
+        margin-top: 40px;
+        color: gold;
+        text-shadow: 0px 0px 10px black,
+                     0px 0px 15px white,
+                     0px 0px 20px grey,
+                     0px 0px 30px black;
+    }
+    .hammenu1{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 140px;
+    }
+    .hammenu1 a{
+        font-size: 2rem;
+        color: white;
+    }
+    .hamToggleImg{
+        height: 3rem;
+        position: absolute;
+        right: 0;
+        top: 1;
+        margin-top: 140px;
+        margin-right: 20px;
+        z-index: 100;
+    }
+    .hamToggle{
+        display: flex;
+    }
+    .hamIcons{
+        display: flex;
+        width: 40%;
+        height: 4rem;
+        margin-bottom: 80px;
+    }
+    .hamIcons a img{
+        height: 3rem;
+        margin: 6px;
+    }
+
+}
+@media only screen and (max-width: 380px) and (min-width:181px) {
+    .nav1{
+
+        width: 90%;
+        margin-right: 0px;
+    }
+    .navbar1{
+        display: none;
+    }
+    .finstreet1{
+        display: none;
+    }
+    .buttons1{
+        display: none;
+    }
+    .container1{
+        display: flex;
+        flex-direction: column;
+    }
+    .hidden{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        align-self: center;
+        margin-top: 220px;
+        border: 2px solid white;
+        height: 60%;
+        width: 90%;
+        border-radius: 15px;
+        backdrop-filter: blur(20px);
+    }
+    .finstreet12{
+        display: flex;
+        font-size: 2rem;
+    }
+    .fclogo12{
+        height: 2rem;
+    }
+    .buttons12{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .buttons12 button{
+        margin: 4px;
+        height: 4rem;
+        border-radius: 10px;
+        width: 80%;
+    }
+    .text1{
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        margin-top: 40px;
+        width: 90%;
+    }
+    .content1{
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+
+    /* Hamburger Menu */
+
+    .hamburger1{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        backdrop-filter: blur(10px) contrast(5);
+        transition-duration: 2s;
+    }
+    .name1{
+        font-size: 1.4rem;
+        font-family: 'Diplomata', serif;
+        margin-top: 40px;
+        color: gold;
+        text-shadow: 0px 0px 10px black,
+                     0px 0px 15px white,
+                     0px 0px 20px grey,
+                     0px 0px 30px black;
+    }
+    .hammenu1{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 140px;
+    }
+    .hammenu1 a{
+        font-size: 2rem;
+        color: white;
+    }
+    .hamToggleImg{
+        height: 3rem;
+        position: absolute;
+        right: 0;
+        top: 1;
+        margin-top: 140px;
+        margin-right: 20px;
+        z-index: 100;
+    }
+    .hamToggle{
+        display: flex;
+    }
+    .hamIcons{
+        display: flex;
+        width: 40%;
+        height: 4rem;
+        margin-bottom: 80px;
+    }
+    .hamIcons a img{
+        height: 3rem;
+        margin: 6px;
+    }
+    .icons1 a{
+        display: none;
+    }
+    .icons1{
+        width: 100%;
+        justify-content: center;
+        margin-right: 0px;
+    }
+}

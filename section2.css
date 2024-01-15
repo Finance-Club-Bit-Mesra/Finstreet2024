@@ -1,0 +1,402 @@
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Diplomata', serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Yesteryear', cursive; */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+}
+.container2{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg,black,grey);
+}
+.left2{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.upper2{
+    margin-top: 2rem;
+    margin-left: 7rem;
+    position: relative;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.finstreet2{
+    position: absolute;
+    color: #d4b500;
+    font-size: 10rem;
+    font-weight: 400;
+    opacity: 1;
+    font-family: 'Mr Dafoe', cursive;
+    text-shadow: 2px 2px 2px white;
+
+}
+.overview2{
+    position: absolute;
+    opacity: 0.15;
+    margin-top: 80px;
+    font-size: 9rem;
+    font-weight: 800;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: underline;
+    text-shadow: 4px 4px 4px black;
+}
+.lower2{
+    margin-left: 7rem;
+    font-size: 1.1rem;
+    width: 70%;
+    text-wrap: wrap;
+    text-align: justify;
+    height: 50%;
+}
+.lower2:hover .overviewText2{
+    color: gold;
+    transition-duration: 3s;
+}
+.bottom2{
+    display: none;
+}
+.overviewText2{
+    text-shadow: 2px 2px 2px black;
+    position: relative;
+    z-index: 500;
+    font-family: 'Poppins', sans-serif;
+    transition-duration: 3s;
+    animation-name: textTrans;
+    animation-duration: .5s;
+    animation-iteration-count: 8;
+}
+
+@keyframes textTrans{
+    from{color: white;}
+    to{color: gold;}
+}
+
+.right2{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    
+}
+.imgContainer2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-top: 10rem;
+}
+.imgContainer2:hover .imgBack2{
+    transform: rotate(22.5deg) scale(1.2);
+    transition: 2s;
+}
+.imgContainer2:hover .imgFront2{
+    transform: rotate(-22.5deg) scale(1.2);
+    transition-duration: 2s;
+}
+.imgBack2{
+    border: 4px solid white;
+    height: 22rem;
+    position: absolute;
+    z-index: 12;
+    margin-left: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    transition-duration: 2s;
+    box-shadow: 0px 0px 5px rgb(82, 82, 82),
+                0px 0px 30px black,
+                0px 0px 15px rgb(63, 63, 63),
+                0px 0px 50px black,
+                0px 0px 25px rgb(145, 145, 145);
+    animation-name: ghoom;
+    animation-duration: 1.8s;
+    animation-iteration-count: 1;
+}
+.imgFront2{
+    border: 4px solid white;
+    height: 16rem;
+    position: absolute;
+    z-index: 34;
+    margin-top: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    transition-duration: 2s;
+    box-shadow: 0px 0px 5px rgb(82, 82, 82),
+                0px 0px 30px black,
+                0px 0px 15px rgb(63, 63, 63),
+                0px 0px 50px black,
+                0px 0px 25px rgb(145, 145, 145);
+    animation-name: ghoomulta;
+    animation-duration: 1.8s;
+    animation-iteration-count: 1;
+}
+
+@keyframes ghoom{
+    from{transform: rotate(0deg) scale(0);}
+    to{transform: rotate(360deg) scale(1);}
+}
+@keyframes ghoomulta{
+    from{transform: rotate(0deg) scale(0);}
+    to{transform: rotate(-360deg) scale(1);}
+}
+
+.img2{
+    position: relative;
+    z-index: 12;
+    box-shadow: 0px 0px 5px rgb(82, 82, 82),
+                0px 0px 30px black,
+                0px 0px 15px rgb(63, 63, 63),
+                0px 0px 50px black,
+                0px 0px 25px rgb(145, 145, 145);
+}
+
+@media only screen and (max-width : 380px){
+    .container2{
+        height: 150vh;
+        width: 100vw;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    .right2{
+        display: none;
+    }
+    .left2{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .upper2{
+        height: 10%;
+        width: 90%;
+        margin-bottom: 1rem;
+        margin-left: 0rem;
+    }
+    .lower2{
+        height: fit-content;
+        width: 90%;
+        margin-left: 0rem;
+        padding: 0.5rem;
+        text-align: justify;
+    }
+    .finstreet2{
+        font-size: 4.2rem;
+    }
+    .overview2{
+        font-size: 3.8rem;
+        margin-top: 40px;
+    }
+    .overviewText2{
+        font: 0.5rem;
+        position: relative;
+        z-index: 500;
+    }
+    .bottom2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 55%;
+        margin-bottom: 1rem;
+    }
+    .img2{
+        width: 90%;
+        aspect-ratio: 1/1;
+        border: 2px solid white;
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width:480px) and (min-width: 381px){
+    .container2{
+        height: 150vh;
+        flex-direction: column;
+    }
+    .right2{
+        display: none;
+    }
+    .left2{
+        width: 90%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .upper2{
+        height: 15%;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
+    .lower2{
+        height: 30%;
+        width: 100%;
+        margin-left: 2rem;
+        padding-right: 1rem;
+        text-align: justify;
+        text-wrap: wrap;
+    }
+    .finstreet2{
+        font-size: 4.2rem;
+    }
+    .overview2{
+        font-size: 3.8rem;
+        margin-top: 40px;
+    }
+    .overviewText2{
+        font: 0.5rem;
+        position: relative;
+        z-index: 500;
+    }
+    .bottom2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 55%;
+        margin-left: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .img2{
+        width: 90%;
+        aspect-ratio: 1/1;
+        border: 2px solid white;
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width : 705px) and (min-width:481px){
+    .container2{
+        height: 150vh;
+        flex-direction: column;
+    }
+    .right2{
+        display: none;
+    }
+    .left2{
+        width: 90%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .upper2{
+        height: 10%;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
+    .lower2{
+        height: fit-content;
+        width: 100%;
+        margin-left: 2rem;
+        padding-right: 1rem;
+        text-align: justify;
+        text-wrap: wrap;
+    }
+    .finstreet2{
+        font-size: 4.2rem;
+    }
+    .overview2{
+        font-size: 3.8rem;
+        margin-top: 40px;
+    }
+    .overviewText2{
+        font: 0.5rem;
+        position: relative;
+        z-index: 500;
+    }
+    .bottom2{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: fit-content;
+        margin-left: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .img2{
+        width: 80%;
+        aspect-ratio: 1/1;
+        border: 2px solid white;
+        margin-top: 1rem;
+    }
+
+}
+@media only screen and (max-width : 1150px) and (min-width:706px){
+    .container2{
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column;
+    }
+    .right2{
+        display: none;
+    }
+    .left2{
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .upper2{
+        height: 10%;
+        width: 90%;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+    }
+    .lower2{
+        height: fit-content;
+        width: 90%;
+        text-align: justify;
+        text-wrap: wrap;
+        margin-left: 0rem;
+    }
+    .finstreet2{
+        font-size: 4.2rem;
+    }
+    .overview2{
+        font-size: 3.8rem;
+        margin-top: 40px;
+    }
+    .overviewText2{
+        font: 0.5rem;
+        position: relative;
+        z-index: 500;
+    }
+    .bottom2{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: fit-content;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .img2{
+        width: 45%;
+        aspect-ratio: 1/1;
+        border: 2px solid white;
+        margin-top: 1rem;
+    }
+
+}

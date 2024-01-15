@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="section2.css">
+    <link rel="stylesheet" href="updatedSchedule.css">
+    <link rel="stylesheet" href="updatedEvents.css">
+    <link rel="stylesheet" href="updatedGallery.css">
+    <link rel="stylesheet" href="sponsor.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="HomePage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Diplomata&family=Josefin+Sans:wght@500;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&family=Yesteryear&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <!--Home Page-->
+    <div id="container1" class="container1">
+
+        <video class="bgVideo1" autoplay loop muted>
+            <source src="./bgVideo.mp4" type="video/mp4" >
+        </video>
+
+        <div class="logoBar1">
+            <img src="./bitmlogo.png" alt="" class="logo1">
+            <img src="./IIC-logo.png" alt="" class="logo1">
+        </div>
+        
+        <div class="finstreet1">
+            <img src="./Finstreet-logo.png" alt="" class="fclogo1">
+            <span class="fin1">Fin</span>
+            <span class="street1">Street</span>
+        </div>
+
+        <div class="navbar1">
+            <div class="nav1">
+                <span class="navBox1">
+                    <a class ="a" href="#container1" class="navElements">Home</a>
+                </span>
+                <span class="navBox1">
+                    <a href="#container2" class="navElements">About</a>
+                </span>
+                <span class="navBox1">
+                    <a href="#schedule-heading" class="navElements">Schedule</a>
+                </span>
+                <span class="navBox1">
+                    <a href="#gallery-container" class="navElements">Gallery</a>
+                </span>
+                <span class="navBox1">
+                    <a href="#footer-container" class="navElements">Contact</a>
+                </span>
+                
+            </div>
+        </div>
+
+        <div class="icons1">
+            <img class="mainlogo" src="./fcbLogo.png" alt="">
+            <a href="https://www.linkedin.com/company/financeclubbit/"><img src="./linkedin(1).png" alt=""></a>
+            <a href="https://www.instagram.com/financeclub_bitm?igsh=MzRlODBiNWFlZA=="><img src="./instagram.png" alt=""></a>
+            <a href="https://www.facebook.com/p/Finance-Club-BIT-Mesra-100065447111184/"><img src="./facebook.png" alt=""></a>
+        </div>
+
+        <div class="hidden">
+            <div class="finstreet12">
+                <img src="./Finstreet-logo.png" alt="" class="fclogo12">
+                <span class="fin12">Fin</span>
+                <span class="street12">Street</span>
+            </div>
+            <div class="text1">
+                <p class="content1">Embark on a financial odyssey at Finstreet. Explore investment insights, market trends, and innovative finance. Elevate your financial know-how – join the adventure! 🚀💰</p>
+            </div>
+            <div class="buttons12">
+                <button class="register1"><a target="_blank" href="https://linktr.ee/financeclubbitmesra?utm_source=linktree_admin_share">Register for Events</a></button>
+                <button class="knowmore1"><a href="#schedule-heading">Know More</a></button>
+            </div>
+        </div>
+
+        <div class="buttons1">
+            <div class="text1">
+                <p class="content1">Embark on a financial odyssey at Finstreet. Explore investment insights, market trends, and innovative finance. Elevate your financial know-how – join the adventure! 🚀💰</p>
+            </div>
+            <div class="innerBtn">
+                <button class="register1"><a target="_blank" href="https://linktr.ee/financeclubbitmesra?utm_source=linktree_admin_share">Register for Events</a></button>
+                <button class="knowmore1"><a href="#schedule-heading">Know More</a></button>
+            </div>
+        </div>
+
+        <button onclick="hideshow()" class="hamToggle" ><img src="./open-menu.png" alt="" class="hamToggleImg"></button>
+
+        <div class="hamburger1">
+            <div class="name1">Finstreet 24'</div>
+            <div class="hammenu1">
+                <a onclick="hideshow()" href="#container1">Home</a>
+                <a onclick="hideshow()" href="#container2">About</a>
+                <a onclick="hideshow()" href="#schedule-heading">Schedule</a>
+                <a onclick="hideshow()" href="#event-container">Events</a>
+                <a onclick="hideshow()" href="#gallery-container">Gallery</a>
+                <a onclick="hideshow()" href="#sponsors-container">Sponsors</a>
+                <a onclick="hideshow()" href="#footer-container">Contact Us</a>
+            </div>
+            <div class="hamIcons">
+                <a href="https://www.linkedin.com/company/financeclubbit/"><img src="./linkedin(1).png" alt=""></a>
+                <a href="https://www.instagram.com/financeclub_bitm?igsh=MzRlODBiNWFlZA=="><img src="./instagram.png" alt=""></a>
+                <a href="https://www.facebook.com/p/Finance-Club-BIT-Mesra-100065447111184/"><img src="./facebook.png" alt=""></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!--ABOUT FINSTREET-->
+    <div id="container2" class="container2">
+        <div class="left2">
+            <div class="upper2">
+                <div id="f2" class="finstreet2">
+                    Finstreet
+                </div>
+                <div id="o2" class="overview2">
+                    Overview
+                </div>
+            </div>
+            <div class="lower2">
+                <div class="overviewText2">
+                    Ready to discover the ultimate keys to financial triumph through fun and exciting events? Get set for a groundbreaking event presented by the Finance Club. Are you prepared to test your financial knowledge and skills and venture into the realms of money management, investment strategies, and wealth creation? 
+
+                    Brace yourself for an exhilarating experience that will have you eagerly anticipating the days until this event unfolds. Stay tuned for an encounter that will spark your financial ambitions and leave you craving for more. Finstreet’24... coming soon! 
+                </div>
+            </div>
+            <div class="bottom2">
+                <img class="img2" src="img2FS.jpg" alt="img1">
+                <img class="img2" src="img1FS.jpg" alt="img2">
+            </div>
+        </div>
+        <div class="right2">
+            <div class="imgContainer2">
+                <img class="imgBack2" src="img2FS.jpg" alt="img1">
+                <img class="imgFront2" src="img1FS.jpg" alt="img2">
+            </div>
+        </div>
+    </div>
+
+    <!--EVENTS-->
+    <div id="event-container" class="card-container">
+        <div class="eventHead">EVENTS</div>
+        <div class="card">
+            <img src="./22.jpg" alt="">
+            <div class="card-content">
+                <h3>Stalk The Stock</h3>
+                <a href="https://unstop.com/competitions/stalk-the-stock-finstreet24-bit-mesra-ranchi-859117" class="btn">Register</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./25.jpg" alt="">
+            <div class="card-content">
+                <h3>Market Kshetra</h3>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5HT0X57Dg6axwne4_xBgoXBpdao9j0OK6ALqcsxwVk2NOQw/viewform" class="btn">Register</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./28.2.jpg" alt="">
+            <div class="card-content">
+                <h3>Arth Anarth</h3>
+                <a href="https://docs.google.com/forms/d/1OApSV5pMC223cMwMtgS1lbVl8--cBwuYpg8901rUYyI/viewform?edit_requested=true" class="btn">Register</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./26.jpg" alt="">
+            <div class="card-content">
+                <h3>Enigma</h3>
+                <a href="https://unstop.com/competitions/enigma-finstreet24-bit-mesra-ranchi-864604?lb=bjqbo40Y" class="btn">Register</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./27.jpg" alt="">
+            <div class="card-content">
+                <h3>Estimania</h3>
+                <a href="https://docs.google.com/forms/d/1Vc0YPJhqkd_-usFLGQ1yGyh3xgOkxpL16Olwlqv7WOw/viewform?edit_requested=true" class="btn">Register</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./23.jpg" alt="">
+            <div class="card-content">
+                <h3>Behind The Stumps</h3>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScDd6OewMbbI87pHHYY_odV-cy6omQsrIhxQVUDDKKlDyxNRw/viewform" class="btn">Register</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./24.jpg" alt="">
+            <div class="card-content">
+                <h3>Chess Tournament</h3>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfQ0rQ5jTlcUqkLlh_IT986fSrC1V9mOxxYPw0yqZhbEjJZ2g/viewform" class="btn">Register</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./21.jpg" alt="">
+            <div class="card-content">
+                <h3>House Of Legacy</h3>
+                <a href="https://docs.google.com/forms/d/1Ze9-R30w9tp_m19_SrtMOp8oha7aIGx67Yjv8aOnjtc/viewform?edit_requested=true" class="btn">Register</a>
+            </div>
+        </div>
+    </div>
+    <!--SCHEDULE-->
+    <h1 id="schedule-heading" class="schedule-heading">Event Schedule</h1>
+    <div id="schedule-container" class="schedule-container">
+        <div class="day-column" id="day-19">
+            <h2 class="day-heading">DAY 1 (January 19)</h2>
+        </div>
+        <div class="separator"></div>
+        <div class="day-column" id="day-20">
+            <h2 class="day-heading">DAY 2 (January 20)</h2>
+        </div>
+        <div class="separator"></div>
+        <div class="day-column" id="day-21">
+            <h2 class="day-heading">DAY 3 (January 21)</h2>
+        </div>
+    </div>
+    <!--GALLERY-->
+    <div id="gallery-container" class="gallery-wrap">
+
+        <div class="gallery">
+           
+          
+            <div> 
+                <span><img src="4.jpg" alt="photo"></span>
+                <span><img src="5.jpg" alt="photo"></span>
+                <span><img src="3.jpg" alt="photo"></span>
+            </div>
+            <div> 
+                <span><img src="1.jpg" alt="photo"></span>
+                <span><img src="2.jpg" alt="photo"></span>
+                <span><img src="6.jpg" alt="photo"></span>
+            </div>
+            <div> 
+                <span><img src="7.jpg" alt="photo"></span>
+                <span><img src="8.jpg" alt="photo"></span>
+                <span><img src="9.jpg" alt="photo"></span>
+            </div>
+            <div> 
+                <span><img src="10.jpg" alt="photo"></span>
+                <span><img src="11.jpg" alt="photo"></span>
+                <span><img src="12.jpg" alt="photo"></span>
+            </div>
+           
+            
+             
+        </div>
+    
+    </div>
+    <!--SPONSORS-->
+    <header>
+        <h1>FinStreet ' 24  Sponsors</h1>
+        <h4> Heartfelt thanks to our esteemed sponsors for their unwavering support and commitment, adding a touch of excellence to Finstreet'24</h4>
+    </header>
+    <main6 id="sponsors-container"></main6>
+    <!--FOOTER-->
+    <footer id="footer-container" class="ftco-footer ftco-bg-dark ftco-section">
+		<div class="container">
+		  <div class="row mb-5">
+			<div class="col-md">
+			  <div class="ftco-footer-widget mb-4">
+				<h2 class="ftco-heading-2">Finstreet</h2>
+				<p> Finstreet'24 is back at BIT Mesra, offering a dynamic blend of thrilling events and insightful speaker sessions. Embrace the opportunity to test your skills and engage with industry experts in this enriching financial extravaganza. Don't miss out on the excitement!</p>
+				<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+				  <li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=100065447111184&mibextid=ZbWKwL"><span class="icon-facebook"></span></a></li>
+				  <li class="ftco-animate"><a href="https://instagram.com/financeclub_bitm?igshid=YmMyMTA2M2Y="><span class="icon-instagram"></span></a></li>
+				</ul>
+			  </div>
+			</div>
+			<div class="col-md">
+			  <div class="ftco-footer-widget mb-4 ml-md-5">
+				<h2 class="ftco-heading-2">Useful Links</h2>
+				<ul class="list-unstyled">
+				  
+                    <li><a href="#container1" class="py-2 d-block">Home</a></li>
+                    <li><a href="#container2" class="py-2 d-block">About</a></li>
+				  <li><a href="#schedule-heading" class="py-2 d-block">Schedule</a></li>
+                  <li><a href="#" class="py-2 d-block">Events</a></li>
+				  <li><a href="#sponsors-container" class="py-2 d-block">Sponsors</a></li>
+				</ul>
+			  </div>
+			</div>
+			
+			<div class="col-md">
+			  <div class="ftco-footer-widget mb-4">
+				  <h2 class="ftco-heading-2">Contact us</h2>
+				  <div class="block-23 mb-3">
+					<ul>
+					  <li><span class="icon icon-map-marker"></span><span class="text">Birla Institute of Technology, Mesra
+  
+						  Ranchi 835215, Jharkhand, INDIA</span></li>
+					  <li><a href="#"><span class="icon icon-phone"></span><span class="text"> Aalok Praveen - 9546949124 </span></a></li>
+					  <li><a href="#"><span class="icon icon-phone"></span><span class="text">Shubham Agrawal - 9693830321 </span></a></li>
+					  <li><a href="#"><span class="icon icon-envelope"></span><span class="text">financeclub@bitmesra.ac.in</span></a></li>
+					</ul>
+				  </div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			 
+			</div>
+		  </div>
+		</div>
+	  </footer>
+    <footer>
+        <p style="display: flex; justify-content: center;">&copy; 2024 Finstreet Annual Fest. All rights reserved.</p>
+      </footer>
+    <!--Scripts-->
+      <!--Home Page-->
+    <script src="HomePage.js" ></script>
+    <!--SCHEDULE-->
+    <script src="updatedSchedule.js"></script>
+    <!--EVENTS-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var cards = document.querySelectorAll('.container .card');
+
+            // Function to add the "show" class to each card
+            function showCards() {
+                cards.forEach(function(card) {
+                    card.classList.add('show');
+                });
+            }
+            setTimeout(showCards, -500);
+        });
+    </script>
+    <!--GALLERY-->
+    <script src="updatedGallery.js"></script>
+    <!--SPONSORS-->
+    <script src="sponsor.js"></script>
+    <!--FOOTER-->
+    <script>
+        ScrollReveal({ 
+            reset: true,
+            distance: '40px',
+            duration : 2000,
+            delay:400
+         });
+        ScrollReveal().reveal('.lower2', { delay: 400, origin: 'left' });
+        ScrollReveal().reveal('.upper2', { delay: 200, origin: 'right' });
+        ScrollReveal().reveal('.imgContainer2', { delay: 500, origin: 'top' });
+        ScrollReveal().reveal('.img2', { delay: 500, origin: 'top' });
+        ScrollReveal().reveal('.buttons1', { delay: 1000, origin: 'top' });
+        ScrollReveal().reveal('.hidden', { delay: 700, origin: 'top' });
+        ScrollReveal().reveal('.navbar1', { delay: 500, origin: 'left' });
+        ScrollReveal().reveal('.schedule-container', { delay: 300, origin: 'top' });
+        ScrollReveal().reveal('.card', { delay: 200, origin: 'top' });
+    </script>
+</body>
+</html>
