@@ -2,25 +2,26 @@ document.addEventListener("DOMContentLoaded", function () {
     // Sample data for demonstration
     const schedules = {
         "day-19": [
-            { time: "10:00 AM", event: "Inauguration", subEvents: ["Finstreet'24 Unveils"] },
-            { time: "18th-19th JAN", event: "Stalk The Stock", subEvents: ["StockGro League:","Start Timing: 9:15 AM (18th January,2024)", "End Timing: 3:30 PM (19th January,2024)"]},
-            { time: "07:00 PM", event: "Speaker Session: Khushi Panjwani", subEvents: ["Entrepreneur 40 U 40, Trader, TEDx Speaker","Shark Tank India S-3, World Record Holder, Author", "Venue: CAT HALL"] }
+            { time: "5:30 PM", event: "Inauguration", subEvents: ["Finstreet'24 Unveils, CAT HALL"] },
+            { time: "18th-19th JAN", event: "Stalk The Stock", subEvents: ["Start Timing: 9:15 AM (18th January,2024)", "End Timing: 3:30 PM (19th January,2024)"]},
+            { time: "06:15-7:15 PM", event: "Speaker Session: Khushi Panjwani", subEvents: ["Entrepreneur 40 U 40, Trader, TEDx Speaker","Shark Tank India S-3, World Record Holder, Author", "Venue: CAT HALL"] }
         
         ],
 
         "day-20": [
             { time: "11:00 AM", event: "Speaker Session: Abhishek Kar", subEvents: ["Youtuber, Investor & Stock Trader, TEDx","Venue: CAT HALL"] },
-            { time: "11:30 AM", event: "Market Kshetra", subEvents: ["Round 1- 17/01/2024 (Online- 7:00 PM)", "Round 2- 20/01/2024(Offline- 4:30 PM)"] },
-            { time: "03:30 PM", event: "Arth Anarth", subEvents: ["Financial Bingo Competition", "Mememania"] },
-            { time: "20th-21st JAN", event: "Chess", subEvents: ["Round 1- 20th Jan", "Finale on 21st Jan"] }
+            { time: "11:00 AM", event: "Enigma", subEvents: ["Quiz", "Case Study Presentation","Venue: Seminar Hall -1"] },
+            { time: "2:00 PM", event: "Market Kshetra", subEvents: ["Round 1- 17/01/2024 (Online- 10:00 PM)", "Round 2- 20/01/2024(Offline- 2:00 PM)","Venue: Room 202"] },
+            { time: "02:30 PM", event: "Arth Anarth", subEvents: ["Financial Bingo Competition", "Mememania","Venue: Room 216"], },
+            { time: "10:00 AM", event: "Chess", subEvents: ["Round 1- 20th Jan", "Finale on 21st Jan","Venue: Room 207"] }
             
             
         ],
         "day-21": [
-            { time: "10:00 AM", event: "Enigma", subEvents: ["Quiz", "Case Study Presentation"] },
-            { time: "11:00 AM", event: "House of Legacy", subEvents: [ "Round 1- 20/01/24(Online)", "Round 2- 21/01/24(Offline- 11:00am)"] },
-            { time: "20th-21st JAN", event: "Estimania", subEvents: ["Round 1- 20/01/24(offline- 10:30am)","Round 2- 21/01/24(offline- 11:00am)"] },
-            { time: "03:30 PM", event: "Behind The Stumps", subEvents: ["Round 1: 18/01/24 (online)", "Round 2: 21/01/24 (offline)"] }
+            { time: "10:00 AM", event: "Behind The Stumps", subEvents: ["Round 1: 17/01/24-10:00PM (online)", "Round 2: 21/01/24 (offline)","Venue: Seminar Hall-1"] },
+            { time: "11:00 AM", event: "House of Legacy", subEvents: [ "Round 1- 17/01/24 - 10:00PM(Online)", "Round 2- 21/01/24(Offline- 11:00am)","Venue: Room 207"] },
+            { time: "11:00 AM", event: "Estimania", subEvents: ["Round 1- 20/01/24(offline- 10:30am)","Round 2- 21/01/24(offline- 11:00am)","Venue: Room 202"] },
+            { time: "10:00 AM", event: "Chess Finals", subEvents: ["Round 1- 20th Jan", "Finale on 21st Jan","Venue: Room 216"] }
         ]
     };
 
